@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:binders="clr-namespace:DuGu.XFLib.Binders"
+    xmlns:duguctrls="clr-namespace:DuGu.XFLib.Controls"
+    xmlns:ffimg="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:fftrans="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    x:Class="QZhiHuFind.Views.ArticleView"
+    BackgroundColor="#E2DFED">
+	<ContentView.Resources>
+        <ResourceDictionary>
+            <Style TargetType="ffimg:CachedImage">
+                <Setter Property="DownsampleToViewSize" Value="true"/>
+                <Setter Property="CacheDuration" Value="7" />
+                <Setter Property="DownsampleUseDipUnits" Value="true" />
+                <Setter Property="ErrorPlaceholder" Value="ic_placeholder.jpg" />
+                <Setter Property="LoadingPlaceholder" Value="ic_placeholder.jpg" />
+            </Style>
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ListView
+        x:Name="ItemsListView"
+        binders:ListViewBinder.ItemTappedCommand="{Binding ItemSelectedCommand}"
+        binders:ListViewBinder.LoadMoreCmd="{Binding LoadMoreCommand}"
+        BackgroundColor="#E2DFED"
+        CachingStrategy="RecycleElement"
+        HasUnevenRows="True"
+        IsPullToRefreshEnabled="True"
+        IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+        ItemsSource="{Binding Items}"
+        RefreshCommand="{Binding RefreshCommand}"
+        SeparatorVisibility="None"
+        VerticalOptions="FillAndExpand">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout
+                        Margin="0,3.5,0,3.5"
+                        Padding="12"
+                        BackgroundColor="White">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <ffimg:CachedImage
+                                    Aspect="AspectFill"
+                                    HeightRequest="20"
+                                    Source="{Binding UserImage}"
+                                    VerticalOptions="Center"
+                                    WidthRequest="20">
+                                    <ffimg:CachedImage.Transformations>
+                                        <fftrans:CircleTransformation />
+                                    </ffimg:CachedImage.Transformations>
+                                </ffimg:CachedImage>
+                                <Label
+                                    FontSize="{StaticResource LittleSize}"
+                                    Text="{Binding UserName}"
+                                    TextColor="{StaticResource SubTitleColor}"
+                                    VerticalOptions="Center" />
+                                <ffimg:CachedImage
+                                    Aspect="AspectFill"
+                                    HeightRequest="10"
+                                    HorizontalOptions="StartAndExpand"
+                                    Source="{Binding BadgeImage}"
+                                    VerticalOptions="Center"
+                                    WidthRequest="10" />
+                                <Label
+                                    FontSize="{StaticResource LittleSize}"
+                                    HorizontalOptions="EndAndExpand"
+                                    Text="{Binding UpdateTimeString}"
+                                    TextColor="{StaticResource SubTitleColor}"
+                                    VerticalOptions="Center" />
+                            </StackLayout>
+                            <ffimg:CachedImage
+                                Aspect="AspectFill"
+                                HeightRequest="100"
+                                IsVisible="{Binding IsHasTitleImage}"
+                                Source="{Binding TitleImage}" />
+                            <Label
+                                FontSize="{StaticResource MediumSize}"
+                                Text="{Binding Title}"
+                                TextColor="{StaticResource TitleColor}"
+                                VerticalOptions="StartAndExpand" />
+                            <Label
+                                FontSize="{StaticResource MidMediumSize}"
+                                Text="{Binding Summary}"
+                                TextColor="{StaticResource SubTitleColor}"
+                                VerticalOptions="StartAndExpand" />
+                        </StackLayout>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        <ListView.Footer>
+             <duguctrls:LoadingView IsLoading="true"/>
+        </ListView.Footer>
+    </ListView>
+  
+</ContentView>

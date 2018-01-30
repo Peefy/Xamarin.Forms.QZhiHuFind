@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:binders="clr-namespace:DuGu.XFLib.Binders"
+    xmlns:duguctrls="clr-namespace:DuGu.XFLib.Controls"
+    binders:AndroidToolBarBinder.MiddleText="{Binding Title}"
+    x:Class="QZhiHuFind.Pages.DailyContentPage">
+        <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="CommentsToolbarItemClicked" Text="评论" />
+        <ToolbarItem Clicked="CollectionToolbarItemClicked" Text="{Binding CollectionToolBarText}" />
+    </ContentPage.ToolbarItems>
+    <StackLayout Spacing="0">
+        <ProgressBar
+            x:Name="progress"
+            Grid.Row="0"
+            HeightRequest="5"
+            HorizontalOptions="Fill"
+            IsVisible="{Binding IsProgressing}"
+            Progress="{Binding Progress}"
+            VerticalOptions="Start" />
+        <duguctrls:WebViewEx
+            x:Name="webView"
+            Grid.Row="1"
+            HtmlBody="{Binding HtmlBody}"
+            LocalCssFileName="{Binding CssFileName}"
+            VerticalOptions="FillAndExpand" />
+    </StackLayout>
+</ContentPage>

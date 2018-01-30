@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:binders="clr-namespace:DuGu.XFLib.Binders"
+    xmlns:duguctrls="clr-namespace:DuGu.XFLib.Controls"
+    xmlns:carView="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+    xmlns:ffimg="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:fftrans="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    x:Class="QZhiHuFind.Views.CollectionView"
+    BackgroundColor="#E2DFED">
+	<ContentView.Resources>
+        <ResourceDictionary>
+            <Style TargetType="ffimg:CachedImage">
+                <Setter Property="CacheDuration" Value="7" />
+                <Setter Property="DownsampleUseDipUnits" Value="true" />
+                <Setter Property="ErrorPlaceholder" Value="ic_placeholder.jpg" />
+                <Setter Property="LoadingPlaceholder" Value="ic_placeholder.jpg" />
+            </Style>
+        </ResourceDictionary>
+    </ContentView.Resources>
+       <ListView
+        x:Name="ItemsListView"
+        binders:ListViewBinder.ItemTappedCommand="{Binding ItemSelectedCommand}"
+        binders:ListViewBinder.LoadMoreCmd="{Binding LoadMoreCommand}"
+        HasUnevenRows="True"
+        IsPullToRefreshEnabled="True"
+        SeparatorVisibility="None"
+        IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+        ItemsSource="{Binding Items}"
+        RefreshCommand="{Binding RefreshCommand}"
+        VerticalOptions="FillAndExpand">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid>
+                        <StackLayout Margin="10,10,10,10" Orientation="Horizontal">
+                            <ffimg:CachedImage
+                                Aspect="AspectFill"
+                                HeightRequest="64"
+                                Source="{Binding Image}"
+                                VerticalOptions="Center"
+                                WidthRequest="64">
+                                <ffimg:CachedImage.Transformations>
+                                    <fftrans:RoundedTransformation
+                                        Radius="60" />
+                                </ffimg:CachedImage.Transformations>
+                            </ffimg:CachedImage>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="{StaticResource MediumSize}"
+                                HorizontalOptions="StartAndExpand"
+                                Text="{Binding Title}"
+                                TextColor="{StaticResource TitleColor}"
+                                VerticalOptions="Start" />
+                            <StackLayout>
+                                <duguctrls:ImageEx
+                                    Aspect="AspectFill"
+                                    ColorFilter="{StaticResource Primary}"
+                                    HeightRequest="32"
+                                    Source="{Binding DailyOrArticleImage}"
+                                    VerticalOptions="Start"
+                                    WidthRequest="32" />
+                                <Label
+                                    FontSize="{StaticResource MidMediumSize}"
+                                    HorizontalOptions="Center"
+                                    Text="{Binding DailyOrArticleText}"
+                                    TextColor="{StaticResource Primary}" />
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentView>

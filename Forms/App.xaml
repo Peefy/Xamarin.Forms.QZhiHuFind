@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="NuGetTest.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!--#region Colors-->
+            <Color x:Key="TitleColor">#212121</Color>
+            <Color x:Key="SubTitleColor">#929ea5</Color>
+            <Color x:Key="Transparent">#00000000</Color>
+            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="PrimaryDark">#1976D2</Color>
+            <Color x:Key="Accent">#96d1ff</Color>
+            <Color x:Key="LightBackgroundColor">#FAFAFA</Color>
+            <Color x:Key="DarkBackgroundColor">#C0C0C0</Color>
+            <Color x:Key="MediumGrayTextColor">#4d4d4d</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+            <Color x:Key="WhiteColor">#ffffff</Color>
+            <Color x:Key="TransparentWhiteColor">#BFffffff</Color>
+            <Color x:Key="BlueColor">#3063f5</Color>
+            <Color x:Key="TransparentBlueColor">#BF3063f5</Color>
+            <Color x:Key="BrightYellowColor">#ffed00</Color>
+            <Color x:Key="GrayColor">#484f63</Color>
+            <Color x:Key="ErrorColor">#ff5252</Color>
+            <Color x:Key="BackgroundGrayColor">#f4f6fa</Color>
+            <Color x:Key="ToolbarBlueColor">#3063f5</Color>
+            <Color x:Key="OrangeColor">#ff5e4d</Color>
+            <Color x:Key="ProfileGrayColor">#afb3be</Color>
+            <Color x:Key="BlackColor">#000000</Color>
+            <Color x:Key="GreenColor">#0aca91</Color>
+            <!--#endregion-->
+
+            <!--#region FontSize-->
+            <OnPlatform
+                x:Key="LittleSize"
+                x:TypeArguments="x:Double"
+                Android="12"
+                WinPhone="12"
+                iOS="11" />
+            <OnPlatform
+                x:Key="MidMediumSize"
+                x:TypeArguments="x:Double"
+                Android="14"
+                WinPhone="14"
+                iOS="12" />
+
+            <OnPlatform
+                x:Key="MediumSize"
+                x:TypeArguments="x:Double"
+                Android="16"
+                WinPhone="16"
+                iOS="14" />
+
+            <OnPlatform
+                x:Key="LargeSize"
+                x:TypeArguments="x:Double"
+                Android="18"
+                WinPhone="18"
+                iOS="16" />
+
+            <OnPlatform
+                x:Key="LargerSize"
+                x:TypeArguments="x:Double"
+                Android="20"
+                WinPhone="20"
+                iOS="18" />
+
+            <OnPlatform
+                x:Key="BigSize"
+                x:TypeArguments="x:Double"
+                Android="24"
+                WinPhone="24"
+                iOS="20" />
+
+            <OnPlatform
+                x:Key="ExtraBigSize"
+                x:TypeArguments="x:Double"
+                Android="32"
+                WinPhone="32"
+                iOS="24" />
+
+            <OnPlatform
+                x:Key="HugeSize"
+                x:TypeArguments="x:Double"
+                Android="48"
+                WinPhone="48"
+                iOS="32" />
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource Primary}" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:NuGetTest" 
+    xmlns:dugu="clr-namespace:DuGu.XFLib.Controls;assembly=DuGuXFLib"
+    x:Class="NuGetTest.NuGetTestPage"
+    Title='{Binding Title}'>
+    <ScrollView>
+        <StackLayout Margin='0,20,0,0'>
+        <Label Text='ghhjg' VerticalOptions='Center'
+                x:Name='label'
+                FontSize='{StaticResource MediumSize}'
+                TextColor='Black'
+                HorizontalOptions='Center'/>
+           <Button Text='ghhjg' VerticalOptions='Center'
+                HorizontalOptions='Center'/>
+            <Button Text='ghhjg' VerticalOptions='Center'
+                HorizontalOptions='Center'/>
+            <Button Text='ghhjg' VerticalOptions='Center'
+        HorizontalOptions='Center'/>
+               <Button Text='ghhjg' VerticalOptions='Center'
+        HorizontalOptions='Center' BackgroundColor='Green' />
+                   <Button Text='ghhjg' VerticalOptions='Center'
+        HorizontalOptions='Center'/>
+            <Image Source='splash.png' WidthRequest='64'
+                HeightRequest='64' HorizontalOptions='Center'/>
+            <dugu:ImageEx Source='splash.png' WidthRequest='64'
+                HeightRequest='64' HorizontalOptions='Center'
+            ColorFilter='Red'/>
+        </StackLayout>  
+    </ScrollView>
+ 
+</ContentPage>

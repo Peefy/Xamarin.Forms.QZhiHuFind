@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+        xmlns:binders="clr-namespace:DuGu.XFLib.Binders"
+    xmlns:duguctrls="clr-namespace:DuGu.XFLib.Controls"
+    xmlns:ffimg="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:fftrans="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    binders:AndroidToolBarBinder.MiddleText="{Binding Title}"
+    x:Class="QZhiHuFind.Pages.DailyCommentsPage">
+	 <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="ffimg:CachedImage">
+                   <Setter Property="DownsampleToViewSize" Value="true"/>
+                <Setter Property="CacheDuration" Value="7" />
+                <Setter Property="DownsampleUseDipUnits" Value="true" />
+                <Setter Property="ErrorPlaceholder" Value="ic_placeholder.jpg" />
+                <Setter Property="LoadingPlaceholder" Value="ic_placeholder.jpg" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+      <ListView
+        x:Name="ItemsListView"
+        binders:ListViewBinder.ItemTappedCommand="{Binding ItemSelectedCommand}"
+        binders:ListViewBinder.LoadMoreCmd="{Binding LoadMoreCommand}"
+        HasUnevenRows="True"
+        IsPullToRefreshEnabled="True"
+        IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+        ItemsSource="{Binding Items}"
+        RefreshCommand="{Binding RefreshCommand}"
+        VerticalOptions="FillAndExpand">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid>
+                        <StackLayout Margin="10,10,10,10" Orientation="Horizontal">
+                            <ffimg:CachedImage
+                       
+                                Aspect="AspectFill"
+                                HeightRequest="48"
+                                Source="{Binding UserImage}"
+                                VerticalOptions="Start"
+                                WidthRequest="48">
+                                <ffimg:CachedImage.Transformations>
+                                    <fftrans:CircleTransformation />
+                                </ffimg:CachedImage.Transformations>
+                            </ffimg:CachedImage>
+                            <StackLayout Margin="4,0,0,0" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        FontSize="{StaticResource MediumSize}"
+                                        HorizontalOptions="StartAndExpand"
+                                        Text="{Binding UserName}"
+                                        TextColor="{StaticResource TitleColor}"
+                                        VerticalOptions="Center" />
+                                    <Image
+                                        HeightRequest="18"
+                                        HorizontalOptions="EndAndExpand"
+                                        Source="good_24dp.png"
+                                        VerticalOptions="Center"
+                                        WidthRequest="18" />
+                                    <Label
+                                        FontSize="{StaticResource MidMediumSize}"
+                                        HorizontalOptions="End"
+                                        Text="{Binding LikesCountString}"
+                                        TextColor="{StaticResource SubTitleColor}" />
+                                </StackLayout>
+
+                                <Label
+                                    FontSize="{StaticResource MediumSize}"
+                                    HorizontalOptions="FillAndExpand"
+                                    Text="{Binding Comment}"
+                                    TextColor="{StaticResource TitleColor}" />
+                                <Label
+                                    FontSize="{StaticResource MidMediumSize}"
+                                    HorizontalOptions="EndAndExpand"
+                                    Text="{Binding PublishTime}"
+                                    TextColor="{StaticResource SubTitleColor}" />
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        <ListView.Footer>
+            <duguctrls:LoadingView IsLoading="{Binding IsShowLoadingView}"/>
+        </ListView.Footer>
+    </ListView>
+</ContentPage>
