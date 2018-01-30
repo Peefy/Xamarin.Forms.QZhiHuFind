@@ -28,24 +28,11 @@ QZhiHuFind is a Xamarin.Forms App to show zhuhu content.
 
 ![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/article_content_v1.png)
 
-* *DailyListView_new*:
-
+* *QZhiHuFind_new*:
 ![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/daily.png)
-
-* *ArticleListView_new*:
-
 ![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/article.png)
-
-* *CollectionListView_new*:
-
 ![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/collection.png)
-
-* *ContentView_new*:
-
 ![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/content.png)
-
-* *Comments_new*:
-
 ![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/comments.png)
 
 ## AndroidApk
