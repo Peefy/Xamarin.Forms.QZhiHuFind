@@ -28,12 +28,25 @@ QZhiHuFind is a Xamarin.Forms App to show zhuhu content.
 
 ![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/article_content_v1.png)
 
-* *QZhiHuFind_new*:
-![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/daily.png)
-![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/article.png)
-![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/collection.png)
-![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/content.png)
-![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/comments.png)
+* *DailyListView_new*:
+
+![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/daily.png?raw=true" width="280")
+
+* *ArticleListView_new*:
+
+![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/article.png?raw=true" width="280")
+
+* *CollectionListView_new*:
+
+![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/collection.png?raw=true" width="280")
+
+* *ContentView_new*:
+
+![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/content.png?raw=true" width="280")
+
+* *Comments_new*:
+
+![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/comments.png?raw=true" width="280")
 
 ## AndroidApk
 
