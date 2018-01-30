@@ -14,39 +14,39 @@ QZhiHuFind is a Xamarin.Forms App to show zhuhu content.
 
 * *DailyListView_v1*:
 
-![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/repport_v1.png)
+<img src="https://github.com/Peefy/Xamarin.Forms.QZhiHuFind/blob/master/screenshots/repport_v1.png?raw=true" width="280"/> 
 
 * *ArticleListView_v1*:
 
-![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/article_v1.png)
+<img src="https://github.com/Peefy/Xamarin.Forms.QZhiHuFind/blob/master/screenshots/article_v1.png?raw=true" width="280"/> 
 
 * *DailyContentView_v1*:
 
-![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/repport_content_v1.png)
+<img src="https://github.com/Peefy/Xamarin.Forms.QZhiHuFind/blob/master/screenshots/repport_content_v1?raw=true" width="280"/> 
 
 * *ArticleContentView_v1*:
 
-![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/article_content_v1.png)
+<img src="https://github.com/Peefy/Xamarin.Forms.QZhiHuFind/blob/master/screenshots/article_content_v1.png?raw=true" width="280"/> 
 
 * *DailyListView_new*:
 
-![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/daily.png?raw=true" width="280")
+<img src="https://github.com/Peefy/Xamarin.Forms.QZhiHuFind/blob/master/screenshots/daily.png?raw=true" width="280"/> 
 
 * *ArticleListView_new*:
 
-![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/article.png?raw=true" width="280")
+<img src="https://github.com/Peefy/Xamarin.Forms.QZhiHuFind/blob/master/screenshots/article.png?raw=true" width="280"/> 
 
 * *CollectionListView_new*:
 
-![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/collection.png?raw=true" width="280")
+<img src="https://github.com/Peefy/Xamarin.Forms.QZhiHuFind/blob/master/screenshots/collection.png?raw=true" width="280"/> 
 
 * *ContentView_new*:
 
-![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/content.png?raw=true" width="280")
+<img src="https://github.com/Peefy/Xamarin.Forms.QZhiHuFind/blob/master/screenshots/content.png?raw=true" width="280"/> 
 
 * *Comments_new*:
 
-![Screenshots](https://raw.githubusercontent.com/Peefy/Xamarin.Forms.QZhiHuFind/master/screenshots/comments.png?raw=true" width="280")
+<img src="https://github.com/Peefy/Xamarin.Forms.QZhiHuFind/blob/master/screenshots/comments.png?raw=true" width="280"/> 
 
 ## AndroidApk
 
