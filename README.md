@@ -66,15 +66,15 @@ If you like this app or it can help you anything.Thanks for **staring** and **fo
 
 Name|Link
 ---|---
-Xamarin.DuGuLib| Github (https://github.com/Peefy/Xamarin.DuGuLib)
-CarouselView.FormsPlugin| Github (https://github.com/alexrainman/CarouselView)
-Ideine.ModernHttpClient| Github (https://github.com/paulcbetts/ModernHttpClient)
-https://github.com/JamesNK/Newtonsoft.Json| Github (https://github.com/JamesNK/Newtonsoft.Json)
-sqlite-net-pcl| Github (https://github.com/praeclarum/sqlite-net)
-Xam.Plugin.Connectivity| Github (https://github.com/jamesmontemagno/ConnectivityPlugin)
-Xamarin.FFImageLoading| Github (https://github.com/luberda-molinet/FFImageLoading)
-Square.OkHttp3| Github (https://github.com/mattleibow/square-bindings)
-**Xamarin.Forms**| Site (https://www.xamarin.com/forms(https://www.xamarin.com/forms)
+ Xamarin.DuGuLib | Github (https://github.com/Peefy/Xamarin.DuGuLib)
+ CarouselView.FormsPlugin | Github (https://github.com/alexrainman/CarouselView)
+ Ideine.ModernHttpClient | Github (https://github.com/paulcbetts/ModernHttpClient)
+ Newtonsoft.Json | Github (https://github.com/JamesNK/Newtonsoft.Json)
+ sqlite-net-pcl | Github (https://github.com/praeclarum/sqlite-net)
+ Xam.Plugin.Connectivity | Github (https://github.com/jamesmontemagno/ConnectivityPlugin)
+ Xamarin.FFImageLoading | Github (https://github.com/luberda-molinet/FFImageLoading)
+ Square.OkHttp3 | Github (https://github.com/mattleibow/square-bindings)
+ **Xamarin.Forms** | Site (https://www.xamarin.com/forms(https://www.xamarin.com/forms)
 
 ## LICENSE
 
