@@ -67,6 +67,8 @@ If you like this app or it can help you anything.Thanks for **staring** and **fo
 Name|Link
 ---|---
  Xamarin.DuGuLib | Github (https://github.com/Peefy/Xamarin.DuGuLib)
+ AndroidToolBarMiddleText | Github (https://github.com/Peefy/Xamarin.Forms.AndroidToolBarMiddleText)
+ BottomTabView | Github (https://github.com/Peefy/Xamarin.Forms.BottomTabView)
  CarouselView.FormsPlugin | Github (https://github.com/alexrainman/CarouselView)
  Ideine.ModernHttpClient | Github (https://github.com/paulcbetts/ModernHttpClient)
  Newtonsoft.Json | Github (https://github.com/JamesNK/Newtonsoft.Json)
