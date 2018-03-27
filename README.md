@@ -12,6 +12,8 @@ QZhiHuFind is a Xamarin.Forms App to show zhuhu content.
 
 ## Screenshots
 
+### Phone simulator
+
 * *DailyListView_v1*:
 
 <img src="https://github.com/Peefy/Xamarin.Forms.QZhiHuFind/blob/master/screenshots/repport_v1.png"/> 
@@ -27,6 +29,8 @@ QZhiHuFind is a Xamarin.Forms App to show zhuhu content.
 * *ArticleContentView_v1*:
 
 <img src="https://github.com/Peefy/Xamarin.Forms.QZhiHuFind/blob/master/screenshots/article_content_v1.png" /> 
+
+### Real Phone
 
 * *DailyListView_new*:
 
