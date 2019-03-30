@@ -80,7 +80,7 @@ Name|Link
  Xam.Plugin.Connectivity | Github (https://github.com/jamesmontemagno/ConnectivityPlugin)
  Xamarin.FFImageLoading | Github (https://github.com/luberda-molinet/FFImageLoading)
  Square.OkHttp3 | Github (https://github.com/mattleibow/square-bindings)
- **Xamarin.Forms** | Site (https://www.xamarin.com/forms(https://www.xamarin.com/forms)
+ **Xamarin.Forms** | Site ([https://www.xamarin.com/forms](https://www.xamarin.com/forms)
 
 ## LICENSE
 
